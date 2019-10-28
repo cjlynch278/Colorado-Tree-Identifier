@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ColoradoTreeIdentifier.LodgepolePine"
+    android:background="@drawable/main_backround">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="470dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="You've found a Lodgepole  Pine!"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/conePic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/latinText"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/lodgepole_branch" />
+
+
+    <ImageView
+        android:id="@+id/bristleConeLeaf"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/descriptionText"
+        android:layout_below="@id/conePic"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/lodgepole_bark" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="550dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="27dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="The lodgepole Pine is a narro-crowned tree with yellow-green needles only 2-3 inches long. The cones are 1-2 inches long with scales that are think and prickly. The trunk is this, scaly, and conflakelike. Height is 60-100 fee ltall. Seeds are eaten by squirrels and grouse, twigs are browsed by deer, the inner bark is gnawed by porcupines. Native Americans used the spling to support their tepee lodges, thus giving the name."
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_above="@+id/descriptionText"
+        android:layout_below="@+id/latinText"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/lodgepole_tree" />
+
+    <TextView
+        android:id="@+id/latinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:paddingStart="@dimen/padding"
+        android:paddingEnd="@dimen/padding"
+        android:text="Pinus Contorta"
+        android:textSize="24sp"
+        android:textStyle="normal|italic"
+        tools:text="Pinus Contorta"
+
+        />
+
+    <!-- <TextView
+         android:layout_below="@id/Name"
+         android:layout_alignParentBottom="true"
+         android:height="100dp"
+         android:width="100dp"
+         android:layout_marginBottom="50dp"
+         android:background="#D3D3D3"
+         android:gravity="center"
+         android:text='Pinus Aristata, Needles 1-1.5" long, narrowly grooved, and often with a sticky "Dandruff"
+         of tiny resin spheres. Cone prickles are 3/16"-7/16" in length. At or near timberline in Colorado, also called the Rocky Mountain Bristlecone Pine'
+
+         android:textSize="25dp"
+     /> -->
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ColoradoTreeIdentifier.WhiteFir"
+    android:background="@drawable/main_backround">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="370dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="You've found a White Fir!"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/conePic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/latinText"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/white_fir_conesjpg" />
+
+
+    <ImageView
+        android:id="@+id/branchPic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/descriptionText"
+        android:layout_below="@id/conePic"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/white_fir_twig" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="550dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="26dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text='This tree is usually 100-180 feet tall with needles that are the same length as eachother. The saplings are typically what you see as "Christmas Trees".  '
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/treePic"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_above="@+id/descriptionText"
+        android:layout_below="@+id/latinText"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="21dp"
+        app:srcCompat="@drawable/white_fir_tree" />
+
+    <TextView
+        android:id="@+id/latinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:paddingStart="@dimen/padding"
+        android:paddingEnd="@dimen/padding"
+        android:text="Abies Concolor"
+        android:textSize="24sp"
+        android:textStyle="normal|italic"
+        tools:text="Abies Concolor"
+
+        />
+
+
+</RelativeLayout>

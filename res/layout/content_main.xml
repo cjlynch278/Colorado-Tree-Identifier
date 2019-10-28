@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ColoradoTreeIdentifier.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="67dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="@string/Tree_Type"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="50sp"
+        app:fontFamily="sans-serif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="0dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#D3D3D3">
+
+            <RelativeLayout
+                android:id="@+id/ConiferLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/pine_tree"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/ConiferButton"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/sporeCount"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:onClick="goToInfoSubConifer"
+                    android:text="Conifer"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#D3D3D3">
+
+            <RelativeLayout
+
+                android:id="@+id/RelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/deciduous_tree"
+                android:clickable="false"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/oneNeedle"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/sporeCount"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="@string/Deciduous"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/textView3"
+                    android:layout_width="331dp"
+                    android:layout_height="128dp"
+                    android:clickable="false"
+                    android:background="@android:color/transparent"
+                    android:rotation="-35"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Coming Soon!"
+                    android:textColor="#FF0000"
+                    android:textSize="30sp"
+                    tools:text="Coming Soon!" />
+
+
+            </RelativeLayout>
+            `
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

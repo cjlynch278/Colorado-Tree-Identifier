@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ColoradoTreeIdentifier.PinyonPine"
+    android:background="@drawable/main_backround">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="470dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="You've found a Pinyon Pine!"
+        android:textSize="30sp"
+        tools:text="You've found a Pinyon Pine!" />
+
+    <ImageView
+        android:id="@+id/conePic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/latinText"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/pinyon_pine_cone" />
+
+
+    <ImageView
+        android:id="@+id/bristleConeLeaf"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/descriptionText"
+        android:layout_below="@id/conePic"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/pinyon_pine_branch" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="550dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="29dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="A short, round-toped nut pine of the central and southern rockies. Needles are 1.5 inches long,dark green, sharp but not spiny. Cones are 1-2 inches longwith thick bnlunt, thrnless scales and half-inch, wingless, edible nuts. The state tree of New Mexico"
+        android:textSize="20dp"
+        tools:text="A short, round-toped nut pine of the central and southern rockies. Needles are 1.5 inches long,dark green, sharp but not spiny. Cones are 1-2 inches longwith thick bnlunt, thrnless scales and half-inch, wingless, edible nuts. The state tree of New Mexico" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_above="@+id/descriptionText"
+        android:layout_below="@+id/latinText"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/pinyon_pine_tree" />
+
+    <TextView
+        android:id="@+id/latinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:paddingStart="@dimen/padding"
+        android:paddingEnd="@dimen/padding"
+        android:text="Pinus Edulis"
+        android:textSize="24sp"
+        android:textStyle="normal|italic"
+        tools:text="Pinus Edulis"
+
+        />
+
+    <!-- <TextView
+         android:layout_below="@id/Name"
+         android:layout_alignParentBottom="true"
+         android:height="100dp"
+         android:width="100dp"
+         android:layout_marginBottom="50dp"
+         android:background="#D3D3D3"
+         android:gravity="center"
+         android:text='Pinus Aristata, Needles 1-1.5" long, narrowly grooved, and often with a sticky "Dandruff"
+         of tiny resin spheres. Cone prickles are 3/16"-7/16" in length. At or near timberline in Colorado, also called the Rocky Mountain Bristlecone Pine'
+
+         android:textSize="25dp"
+     /> -->
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pine_tree"
+    tools:context="com.ColoradoTreeIdentifier.Fir">
+
+    <Button
+        android:id="@+id/SubAlpineFir"
+        android:layout_width="470dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:onClick="goToSubAlpineFir"
+        android:text="Are the needles 1 to 1.75 inches long? Is the shape tall and narrow? Does it taper to a point at the top?"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/WhiteFir"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SubAlpineFir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:onClick="goToWhiteFir"
+        android:text="Are the needles 1.75-3 inches long? Do the needles curve upward in a shallow 'U' shape? Is the tree 100-180 feet tall?"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/DouglassFir"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WhiteFir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="55dp"
+        android:gravity="center"
+        android:onClick="goToDouglassFir"
+        android:text="Are the cones on the ground intact and 1-3 inches long? Are there three pointed 'strips' coming out of the cone? "
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

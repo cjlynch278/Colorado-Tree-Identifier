@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Colorado Tree Identifier</string>
+    <string name="action_settings">Settings</string>
+    <string name="Tree_Type">Is this tree a conifer or a deciduous tree?</string>
+    <string name="Deciduous">Deciduous</string>
+    <string name="Conifer">Conifer</string>
+    <string name="title_activity_bristle_cone">BristleCone</string>
+</resources>

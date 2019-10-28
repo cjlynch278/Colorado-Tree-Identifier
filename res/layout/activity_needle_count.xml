@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ColoradoTreeIdentifier.NeedleCountActivity"
+    android:background="@drawable/pine_tree">
+
+    <TextView
+        android:id="@+id/sporeCount"
+        android:layout_width="470dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="15dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="How Many Needles Are in Each Spore?"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/oneNeedle"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/sporeCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:onClick="goToOneNeedle"
+        android:text="1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/twoNeedle"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/oneNeedle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:onClick="goToTwoNeedle"
+        android:text="2"
+        android:textSize="30sp"
+        tools:text="2" />
+
+    <Button
+        android:id="@+id/threeNeedle"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/twoNeedle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:onClick="goToPonderosa"
+        android:text="3"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/fiveNeedle"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/threeNeedle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:onClick="goToFiveNeedle"
+        android:text="5"
+        android:textSize="30sp" />
+=
+
+</RelativeLayout>
